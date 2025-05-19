@@ -1,0 +1,104 @@
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+}
+
+.info {
+    background-color: #eef;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+textarea {
+    width: 95%; /* Allow padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea[readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Allows wrapping */
+    word-wrap: break-word; /* Breaks long words/codes */
+    font-family: monospace;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 30px 0;
+}
+
+button.copy-button {
+    background-color: #6c757d; /* A different color */
+    margin-top: 5px; /* Add some space above it */
+    width: auto; /* Allow button to size to content */
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 0.9em; /* Slightly smaller text */
+    display: inline-block; /* Put it beside potential other elements if needed */
+}
+
+button.copy-button:hover {
+    background-color: #5a6268;
+}

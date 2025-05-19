@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Cipher in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Substitution Cipher</h1>
+
+    <div class="container">
+        <p>
+            This tool encrypts and decrypts messages using a substitution cipher.
+            The cipher key is randomized each time the page loads, similar to the
+            original C++ program's shuffling mechanism (without reading a local file).
+        </p>
+
+        <div class="section">
+            <h2>Encrypt Message</h2>
+            <label for="message-to-encrypt">Enter message:</label>
+            <textarea id="message-to-encrypt" rows="4"></textarea>
+            <button id="encrypt-button">Encrypt</button>
+            <label for="encrypted-output">Encrypted Result:</label>
+            <textarea id="encrypted-output" rows="4" readonly></textarea>
+            <button id="copy-encrypted-button" class="copy-button">Copy Result</button>
+            </div>
+
+        <hr>
+
+        <div class="section">
+            <h2>Decrypt Message</h2>
+            <label for="message-to-decrypt">Enter encrypted code:</label>
+            <textarea id="message-to-decrypt" rows="4"></textarea>
+            <button id="decrypt-button">Decrypt</button>
+            <label for="decrypted-output">Decrypted Result:</label>
+            <textarea id="decrypted-output" rows="4" readonly></textarea>
+            </div>
+
+         <hr>
+
+        <div class="section info">
+             <h2>Current Cipher Key (Shuffled)</h2>
+             <p>For reference, here is the currently active mapping (randomized on page load):</p>
+             <pre id="cipher-key-display"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
